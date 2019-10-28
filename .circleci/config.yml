@@ -1,0 +1,11 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/lint-ut-circleci
+    docker:
+      - image: circleci/python:3.6
+    steps:
+      - checkout
+      - run:
+          command: |
+            
